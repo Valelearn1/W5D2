@@ -1,0 +1,493 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+#site-header {
+  background-color: rgb(255, 255, 255);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(http://picsum.photos/seed/picsum/1240/768);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  line-height: 3;
+  padding: 30px 16px 20px;
+  border-bottom: 4px solid hsl(220, 89%, 64%);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#site-header h1 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  line-height: 0.8;
+}
+
+.tagline {
+  color: hsl(225, 40%, 96%);
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#site-header nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+#site-header nav li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid rgba(251, 249, 249, 0.478);
+  border-radius: 4px;
+}
+
+#site-header nav a {
+  color: rgb(240, 243, 249);
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  padding: 8px 8px;
+  margin: 0 4px;
+  border-radius: 4px;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 16px 16px;
+}
+
+main section {
+  padding: 16px;
+  margin-bottom: 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  font-size: clamp(1.3rem, 4vw, 1.8rem);
+  color: hsl(220, 60%, 30%);
+  text-align: left;
+  line-height: 1.6;
+}
+
+main section h2::before {
+  content: "✴︎ ";
+  color: hsl(220, 89%, 64%);
+}
+
+.div-icon {
+  display: inline-block;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: hsl(220, 60%, 30%);
+  text-align: left;
+}
+
+.avatar {
+  width: 110px;
+  height: 110px;
+  border: 4px solid hsl(220, 89%, 64%);
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  display: block;
+}
+
+#chi-sono {
+  background-color: #ffffff;
+  text-align: justify;
+}
+
+#chi-sono p:first-of-type {
+  font-size: 1.15em;
+  font-style: italic;
+  color: rgb(1, 18, 86);
+}
+
+#chi-sono p:first-of-type::first-letter {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-right: 2px;
+  color: hsl(221, 91%, 51%);
+  line-height: 1;
+}
+
+#competenze {
+  clear: both;
+}
+
+#competenze table {
+  width: 100%;
+  border-style: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+#competenze table caption {
+  font-style: italic;
+  color: hsl(220, 49%, 27%);
+}
+
+#competenze table th {
+  text-align: left;
+  background-color: rgb(219, 248, 249);
+  color: hsl(220, 49%, 27%);
+  border-style: hidden;
+  padding: 10px 14px;
+}
+
+#competenze table td {
+  width: 50%;
+  border-style: hidden;
+  padding: 10px 14px;
+}
+
+.container-percentuale {
+  width: 100%;
+  display: inline-block;
+}
+
+.percentuale-skill {
+  background-color: rgb(99, 248, 226);
+  width: 70%;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.background-skill {
+  background-color: rgb(236, 234, 221);
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.font-p2 {
+  font-style: italic;
+  font-size: 0.8em;
+  color: #6b6b6b;
+}
+
+.project {
+  padding-left: 16px;
+  padding-top: 2px;
+  border-radius: 8px;
+  border-left: 4px solid rgb(125, 199, 248);
+  padding-bottom: 2%;
+  position: relative;
+}
+
+.project:nth-of-type(odd) {
+  background-color: rgb(224, 244, 245);
+}
+
+.project:nth-of-type(even) {
+  background-color: rgb(246, 249, 247);
+}
+
+/* keeping the below for future reference */
+/* .project:first-of-type h3::after {
+  content: "NEW";
+  display: inline-block;
+  padding: 4px 8px;
+  margin-left: 12px;
+  background-color: rgb(9, 155, 126);
+  color: #ffffff;
+  border-radius: 3px;
+  font-size: 1.1rem;
+} */
+
+.project:first-of-type::after {
+  content: "NEW";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px 4px;
+  background-color: rgb(9, 155, 126);
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 0 4px 0 4px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#esperienze table caption {
+  font-style: italic;
+  color: hsl(220, 49%, 27%);
+  text-align: left;
+}
+
+#esperienze table th {
+  background-color: rgb(219, 248, 249);
+  color: hsl(220, 49%, 27%);
+}
+
+#esperienze table th,
+td {
+  border: 1px solid #cbcbcb;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  text-align: left;
+  padding: 10px 14px;
+}
+
+.container {
+  display: inline;
+}
+
+h4 {
+  font-style: italic;
+}
+
+h4 {
+  font-size: 1.2em;
+  color: rgb(55, 145, 112);
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+label {
+  font-weight: bold;
+  color: hsl(220, 60%, 30%);
+}
+
+input,
+textarea,
+select {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: rgb(245, 251, 251);
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgb(192, 235, 235);
+  color: #000000;
+}
+
+.consent {
+  width: auto;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #999999;
+  font-style: italic;
+}
+
+input[type="checkbox"] {
+  cursor: default;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 3px 4px;
+  padding: initial;
+  border: initial;
+}
+
+#apri-contatti {
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(220, 49%, 27%);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 1rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.overlay[hidden] {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+#chiudi-contatti {
+  color: hsl(220, 49%, 27%);
+  background-color: hsl(0, 0%, 98%);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  float: right;
+  margin-top: 20px;
+}
+
+a.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 50;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+#site-footer {
+  background-color: rgb(11, 30, 66);
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 2.4;
+  padding: 8px 6px;
+  font-style: italic;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 60px 20px 40px;
+  }
+  main {
+    padding: 40px 20px;
+  }
+  section {
+    padding: 32px;
+  }
+  section p {
+    margin-left: 20px;
+  }
+  .avatar {
+    float: left;
+    margin-right: 20px;
+  }
+  input/textarea {
+    width: 60%;
+  }
+  h3 {
+    margin-left: 20px;
+  }
+  #chi-sono p:first-of-type::first-letter {
+    font-size: 3rem;
+    font-weight: bold;
+    float: left;
+    margin-right: 2px;
+    margin-top: -18px;
+    color: hsl(220, 60%, 30%);
+  }
+  #apri-contatti {
+    margin-left: 1.5rem;
+  }
+
+  #site-footer {
+    padding: 20px 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1,
+  h2 {
+    font-size: 1.5rem, 4vw, 3rem;
+  }
+  header {
+    padding: 60px 20px 40px;
+  }
+  #site-header nav li:hover {
+    color: hsl(219, 14%, 55%);
+    background-color: rgba(203, 218, 251, 0.446);
+  }
+  main {
+    padding: 40px 20px;
+  }
+  section {
+    padding: 32px;
+  }
+  section p {
+    margin-left: 20px;
+  }
+  .avatar {
+    float: left;
+    margin-right: 20px;
+  }
+  input/textarea {
+    width: 60%;
+  }
+  button:hover {
+    color: hsl(45, 90%, 80%);
+    background-color: hsl(220, 60%, 45%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  h3 {
+    margin-left: 20px;
+  }
+  #chi-sono p:first-of-type::first-letter {
+    font-size: 3rem;
+    font-weight: bold;
+    float: left;
+    margin-right: 2px;
+    margin-top: -18px;
+    color: hsl(220, 60%, 30%);
+  }
+  #apri-contatti {
+    margin-left: 2rem;
+  }
+  #site-footer {
+    padding: 20px 10px;
+  }
+}
