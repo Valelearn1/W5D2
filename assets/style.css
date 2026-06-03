@@ -318,6 +318,18 @@ input[type="checkbox"] {
   border: initial;
 }
 
+#sendForm {
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(220, 49%, 27%);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 1rem;
+}
+
 #apri-contatti {
   color: hsl(0, 0%, 98%);
   background-color: hsl(220, 49%, 27%);
