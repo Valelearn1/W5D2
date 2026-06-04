@@ -221,7 +221,7 @@
 
       <form method="get" action="grazie.html">
         <label for="name">Nome</label> <br />
-        <input type="text" id="name" class="focus" placeholder="Il tuo nome" required /> <br /><br />
+        <input type="text" id="fullName" class="focus" placeholder="Il tuo nome" required /> <br /><br />
         <label for="email">E-mail</label> <br />
         <input type="email" id="email" class="focus" placeholder="Esempio: nome@gmail.com" required /> <br /><br />
         <label for="reason">Motivo del contatto</label> <br />
@@ -239,7 +239,7 @@
         <input type="checkbox" id="consent" name="consent" class="consent" required />
         <label for="consent">Accetto di essere ricontattato all'indirizzo indicato</label>
         <br /><br />
-        <button type="submit" id="sendForm">Invia</button>
+        <button type="submit" id="sendForm">Conferma</button>
       </form>
 
     </div>
@@ -247,13 +247,26 @@
 
   <a href="#top" class="back-to-top" title="Torna in cima">⬆</a>
 
+    <div class="container">
+    <div class="formResponse">
+      <h2>Dati del form</h2>
+      <h3 id="registerName"></h3>
+      <h3 id="registerEmail"></h3>
+      <h3 id="registerDate"></h3>
+    </div>
+  </div>
+
+  <p>&nbsp;</p>
+
+
   <footer id="site-footer">
     <a href="#" class="fa fa-facebook" target="_blank"></a>
     <a href="#" class="fa fa-instagram" target="_blank"></a>
     <a href="#" class="fa fa-twitter" target="_blank"></a>
     <a href="#" class="fa fa-linkedin" target="_blank"></a>
-    <p>© 2026 Valentina Ferro - Costruito a mano durante la prima settimana di corso.</p>
+    <p>© 2026 Valentina Ferro</p>
   </footer>
+
 
 <script src="assets/script.js"></script>
 
